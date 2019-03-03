@@ -1,0 +1,27 @@
+{
+  "name": "tcp-backend-gsm-mods",
+  "version": "1.0.0",
+  "description": "Node TCP backend for testing new gsm modules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watch src/*.js",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/backeseduardo/tcp-backend-gsm-mods.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/backeseduardo/tcp-backend-gsm-mods/issues"
+  },
+  "homepage": "https://github.com/backeseduardo/tcp-backend-gsm-mods#readme",
+  "dependencies": {
+    "dayjs": "^1.8.8"
+  },
+  "devDependencies": {
+    "jest": "^24.1.0"
+  }
+}
