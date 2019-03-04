@@ -1,4 +1,5 @@
 const net = require('net')
+const path = require('path')
 const log = require('./log')
 const watcher = require('./watcher')
 const port = 3001
