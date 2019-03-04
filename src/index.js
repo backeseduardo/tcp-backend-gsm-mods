@@ -1,11 +1,17 @@
 const net = require('net')
 const log = require('./log')
-const sender = require('./sender')
+const watcher = require('./watcher')
 const port = 3001
 const connections = []
 
 // initialize sender, it stays watching the file data/sendto.txt
-sender(connections)
+watcher(`${path.dirname(__filename)}/../data/`, (err, data) => {
+  if (err) {
+    console.error(err)
+  } else {
+    connections.forEach(conn => conn.write(`${data}\r\n`))
+  }
+})
 
 console.log('Starting TCP server')
 const server = net.createServer(conn => {

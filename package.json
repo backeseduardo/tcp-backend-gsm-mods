@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/backeseduardo/tcp-backend-gsm-mods#readme",
   "dependencies": {
-    "dayjs": "^1.8.8"
+    "dayjs": "^1.8.8",
+    "node-watch": "^0.6.0"
   },
   "devDependencies": {
     "jest": "^24.1.0"
