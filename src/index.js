@@ -2,7 +2,7 @@ const net = require('net')
 const path = require('path')
 const log = require('./log')
 const watcher = require('./watcher')
-const port = 3001
+const port = 8080
 const connections = []
 
 // initialize sender, it stays watching the file data/sendto.txt
